@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin='anonymous' src='https://kit.fontawesome.com/86e4670193.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="reproductorflat" id="reproductor">
+        <div id="control">
+            <i class="far fa-window-close hidden" id="cerrar"></i>
+            <i class="fas fa-sort-up " id="open"></i>
+        </div>
+        
+        <audio id="audio"src="https://firebasestorage.googleapis.com/v0/b/escuela-32bef.appspot.com/o/Spring_In_My_Step.mp3?alt=media&token=a1e181b1-ed46-4e96-8a38-3f27d16ab42d"></audio>
+    
+    <div id="boton">
+        <i class="fas fa-play" id="play"></i>
+        <i class="fas fa-pause hidden" id="pause"></i>
+    </div>
+</div>
+    <style>
+        body{
+            
+        }
+        .reproductorflat{
+            height: 200px;
+            width: 100%;
+            background-color: rgba(15, 107, 119, 0.945);
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .reproductor{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(15, 107, 119, 0.945);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #cerrar, #open{
+            position: absolute;
+            font-size: 2em;
+            color: white;
+            top: 10px;
+            left: 20px;
+        }
+        #boton{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: rgb(18, 141, 179);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 3px black;
+        }
+        #boton i{
+            font-size: 2em;
+            color:white;
+            box-shadow: 2px 2px 3px grey;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+    <script src="./index.js"></script>
+</body>
+</html>
